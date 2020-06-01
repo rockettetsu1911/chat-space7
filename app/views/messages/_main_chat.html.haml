@@ -1,4 +1,37 @@
 .main__chat
   .main__chat--header
+    .main__chat--header--box
+      .header--title
+        test
+      .header__member
+        .member
+          Member:
+        .member__name
+          masa    
+    .edit
+      = link_to '#', class: 'edit__btn' do
+        edit
   .tweet
+    .tweet--header
+      .tweet--header__user
+        masa
+      .tweet--header__date
+        2019/11/20(wed) 17:43:01
+    .text
+      おはよう
+    .tweet--header
+      .tweet--header__user
+        masa
+      .tweet--header__date
+        2019/11/20(wed) 17:43:01
+    .text
+      おはよう
   .form
+    .input__box
+      %input{ type: 'text', class:'input__form',placeholder: 'type a message'}
+      %label.add__image
+        = icon('far','image')
+        %input{type: 'file', class: 'add__image__btn'}
+    %input{type: 'submit', class: 'send__btn', }
+
+
