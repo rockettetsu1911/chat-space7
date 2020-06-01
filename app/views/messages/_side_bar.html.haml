@@ -1,3 +1,16 @@
 .side__bar
-  .side__bar--header
-  .side__bar--main
+  %section.side__bar--header
+    .side__bar--header--box
+      .user__name
+        masa
+      .icon
+        = link_to '#', class: 'icon__edit' do
+          = icon('far', 'edit')
+        = link_to '#', class: 'icon__new' do
+          = icon('far', 'cog')
+  %section.side__bar--main
+    .group
+      .group__name
+        techcamp
+      .group__text
+        まだメッセージがありません
